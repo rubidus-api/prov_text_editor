@@ -1,0 +1,39 @@
+# Build output
+build/
+bin/
+
+# Object files, deps, and the bootstrapped nob driver
+*.o
+*.d
+*.a
+nob
+nob.old
+
+# Stray executables (binaries live under bin/, which is ignored above)
+*.exe
+
+# Misc
+.DS_Store
+*.log
+
+# Local-only working documents (see AGENTS.md doc map)
+CONTEXT.md
+MEMORY.md
+TODO.md
+CHECKLIST.md
+CHANGELOGS.md
+
+# credentials — never track (defense in depth)
+github-personal-access-token
+*-ssh-key-*
+*.pem
+*api*key*
+cloudflare*.env
+
+# --- private agent/state docs (never track) ---
+AGENTS.md
+TESTS.md
+*.local.md
+*_internal/
+__pycache__/
+*.pyc
